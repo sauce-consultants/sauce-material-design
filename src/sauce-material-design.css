@@ -14,23 +14,6 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-/* ==========  Color Palettes  ========== */
-/* colors.scss */
-/**
- * Copyright 2015 Google Inc. All Rights Reserved.
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *      http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
 /* Material Design Lite */
 /**
  * Copyright 2015 Google Inc. All Rights Reserved.
@@ -10943,26 +10926,40 @@ _:-ms-input-placeholder, :root .mdl-slider.mdl-slider.is-upgraded {
     .mdl-cell--11-offset-desktop.mdl-cell--11-offset-desktop {
       margin-left: 91.66667%; } }
 
-.sdl-header {
-  background: rgb(63,81,181);
+.smd-header {
+  background: blue;
   color: white;
   padding: 10rem 2rem 3rem;
   position: relative; }
-  .sdl-header__title {
+  .smd-header__title {
     font-size: 2rem;
     font-weight: 100;
     line-height: 1;
     margin: 0;
     text-transform: uppercase; }
-  .sdl-header__back {
+  .smd-header__back {
     position: absolute;
     left: 2rem;
     top: 2rem; }
-  .sdl-header__search {
+  .smd-header__search, .smd-header__mini-search {
+    bottom: 3rem;
     position: absolute;
-    right: 2rem;
-    bottom: 3rem; }
-  .sdl-header__fab {
-    position: absolute;
+    right: 2rem; }
+  .smd-header__search {
+    margin: 0 .75rem; }
+  .smd-header__mini-search {
+    margin: 0 .25rem; }
+  .smd-header__fab {
     bottom: -1.75rem;
+    left: 2rem;
+    position: absolute; }
+    .smd-header__fab--right {
+      left: auto;
+      right: 2rem; }
+  .smd-header__mini-fab {
+    position: absolute;
+    bottom: -1.25rem;
     left: 2rem; }
+    .smd-header__mini-fab--right {
+      left: auto;
+      right: 2rem; }

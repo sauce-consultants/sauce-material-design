@@ -1,5 +1,6 @@
-.sdl-header {
-  background: unquote("rgb(#{$color-primary;})");
+.smd-header {
+  //background: unquote("rgb(#{$color-primary;})");
+  background: blue;
   color: white;
   padding: 10rem 2rem 3rem;
   position: relative;
@@ -15,14 +16,34 @@
     left: 2rem;
     top: 2rem;
   }
-  &__search {
+  &__search,
+  &__mini-search {
+    bottom: 3rem;
     position: absolute;
     right: 2rem;
-    bottom: 3rem;
+  }
+  &__search {
+    margin: 0 .75rem;
+  }
+  &__mini-search {
+    margin: 0 .25rem;
   }
   &__fab {
-    position: absolute;
     bottom: -1.75rem;
     left: 2rem;
+    position: absolute;
+    &--right {
+      left: auto;
+      right: 2rem;
+    }
+  }
+  &__mini-fab {
+    position: absolute;
+    bottom: -1.25rem;
+    left: 2rem;
+    &--right {
+      left: auto;
+      right: 2rem;
+    }
   }
 }
