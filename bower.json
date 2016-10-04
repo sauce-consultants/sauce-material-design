@@ -1,0 +1,29 @@
+{
+  "name": "sauce-material-design",
+  "authors": [
+    "Jim Wardlaw <jim.wardlaw@gmail.com>"
+  ],
+  "description": "Extension of the google material design language for sauce",
+  "main": [
+      "sauce-material-design.css"
+  ],
+  "keywords": [
+    "material",
+    "design",
+    "scss"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+  },
+  "dependencies": {
+    "material-design-lite": "^1.2.1"
+  }
+}

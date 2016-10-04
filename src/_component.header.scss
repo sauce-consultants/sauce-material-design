@@ -1,0 +1,28 @@
+.sdl-header {
+  background: unquote("rgb(#{$color-primary;})");
+  color: white;
+  padding: 10rem 2rem 3rem;
+  position: relative;
+  &__title {
+    font-size: 2rem;
+    font-weight: 100;
+    line-height: 1;
+    margin: 0;
+    text-transform: uppercase;
+  }
+  &__back {
+    position: absolute;
+    left: 2rem;
+    top: 2rem;
+  }
+  &__search {
+    position: absolute;
+    right: 2rem;
+    bottom: 3rem;
+  }
+  &__fab {
+    position: absolute;
+    bottom: -1.75rem;
+    left: 2rem;
+  }
+}
