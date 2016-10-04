@@ -10929,43 +10929,68 @@ _:-ms-input-placeholder, :root .mdl-slider.mdl-slider.is-upgraded {
 .smd-header {
   background: blue;
   color: white;
-  padding: 10rem 2rem 3rem;
+  padding: 0;
   position: relative; }
   .smd-header__title {
-    font-size: 2rem;
-    font-weight: 100;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-size: 45px;
+    font-weight: 400;
+    line-height: 48px;
+    font-size: 40px;
+    font-weight: 400;
     line-height: 1;
-    margin: 0;
-    text-transform: uppercase; }
-  .smd-header__back {
-    position: absolute;
-    left: 2rem;
-    top: 2rem; }
-  .smd-header__search, .smd-header__mini-search {
-    bottom: 3rem;
-    position: absolute;
-    right: 2rem; }
-  .smd-header__search {
-    margin: 0 .75rem; }
-  .smd-header__mini-search {
-    margin: 0 .25rem; }
+    margin: 0 0 0 3.75rem; }
+  .smd-header__toolbar {
+    position: relative;
+    height: 4rem;
+    padding: 0 1rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center; }
+    .smd-header__toolbar--middle {
+      pointer-events: none; }
+    .smd-header__toolbar--bottom {
+      pointer-events: none; }
+  .smd-header__action {
+    height: 2.5rem;
+    width: 2.5rem; }
   .smd-header__fab {
     bottom: -1.75rem;
-    left: 2rem;
+    left: .5rem;
     position: absolute; }
     .smd-header__fab--right {
       left: auto;
-      right: 2rem; }
+      right: .5rem; }
   .smd-header__mini-fab {
     position: absolute;
     bottom: -1.25rem;
-    left: 2rem; }
+    left: 1rem; }
     .smd-header__mini-fab--right {
       left: auto;
-      right: 2rem; }
+      right: 1rem; }
+  .smd-header--minimized .smd-header__toolbar--middle, .smd-header--minimized .smd-header__toolbar--bottom {
+    left: 0;
+    position: absolute;
+    right: 0; }
+  .smd-header--minimized .smd-header__toolbar--middle {
+    top: 0; }
+  .smd-header--minimized .smd-header__toolbar--bottom {
+    bottom: 0; }
+  .smd-header--minimized .smd-header__title {
+    font-size: 30px; }
+  .smd-header--with-fab {
+    padding-bottom: 1.75rem; }
+
+.spacer {
+  flex: 1;
+  flex-basis: 0.000000001px; }
+
+h1, h2, h3, h4, h5, h6 {
+  -webkit-font-smoothing: antialiased; }
 
 body, html {
-  height: 100%; }
+  height: 100%;
+  font-size: 16px; }
 
 body {
   margin: 0px; }
