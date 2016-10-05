@@ -19,246 +19,592 @@
       <div class="mdl-layout__drawer">
         <span class="mdl-layout-title">Sauce Design Lite</span>
         <nav id="main-navigation" class="mdl-navigation">
+          <a class="mdl-navigation__link" href="#header">Header</a>
+          <a class="mdl-navigation__link" href="#item">Item</a>
         </nav>
       </div>
 
       <div class="mdl-layout__content">
         <div class="styleguide__demo">
-          <h1 class="styleguide__title">Header</h1>
-          <h2 class="styleguide__subtitle">Basic header component</h2>
 
-          <div class="styleguide__preview">
+          <section id="header">
+            <h1 class="styleguide__title">Header</h1>
+            <h2 class="styleguide__subtitle">Basic header component</h2>
 
-            <header class="smd-header">
+            <div class="styleguide__preview">
 
-              <div class="smd-header__toolbar smd-header__toolbar--top">
-                <button class="smd-header__action mdl-button mdl-js-button mdl-button--icon">
-                  <i class="material-icons">arrow_back</i>
+              <header class="smd-header">
+
+                <div class="smd-header__toolbar smd-header__toolbar--top">
+                  <button class="smd-header__action mdl-button mdl-js-button mdl-button--icon">
+                    <i class="material-icons">arrow_back</i>
+                  </button>
+                  <div class="spacer"></div>
+                  <button class="smd-header__action mdl-button mdl-js-button mdl-button--icon">
+                    <i class="material-icons">search</i>
+                  </button>
+                  <button class="smd-header__action mdl-button mdl-js-button mdl-button--icon">
+                    <i class="material-icons">more_horizontal</i>
+                  </button>
+                </div>
+
+                <div class="smd-header__toolbar smd-header__toolbar--middle">
+
+                </div>
+
+                <div class="smd-header__toolbar smd-header__toolbar--bottom">
+                    <h1 class="smd-header__title">Header Title</h1>
+                </div>
+
+              </header>
+
+            </div>
+
+            <h2 class="styleguide__subtitle">Header component with image</h2>
+
+            <div class="styleguide__preview">
+
+              <header class="smd-header">
+
+                <div class="smd-header__cover-image" style="background-image: url('https://unsplash.it/1200/400?blur');">
+
+                </div>
+
+                <div class="smd-header__toolbar smd-header__toolbar--top">
+                  <button class="smd-header__action mdl-button mdl-js-button mdl-button--icon">
+                    <i class="material-icons">arrow_back</i>
+                  </button>
+                  <div class="spacer"></div>
+                  <button class="smd-header__action mdl-button mdl-js-button mdl-button--icon">
+                    <i class="material-icons">search</i>
+                  </button>
+                  <button class="smd-header__action mdl-button mdl-js-button mdl-button--icon">
+                    <i class="material-icons">more_horizontal</i>
+                  </button>
+                </div>
+
+                <div class="smd-header__toolbar smd-header__toolbar--middle">
+
+                </div>
+
+                <div class="smd-header__toolbar smd-header__toolbar--bottom">
+                    <h1 class="smd-header__title">Header Title</h1>
+                </div>
+
+              </header>
+
+            </div>
+
+            <h2 class="styleguide__subtitle">Minimized header component</h2>
+
+            <div class="styleguide__preview">
+
+              <header class="smd-header smd-header--minimized">
+
+                <div class="smd-header__toolbar smd-header__toolbar--top">
+                  <button class="smd-header__action mdl-button mdl-js-button mdl-button--icon">
+                    <i class="material-icons">arrow_back</i>
+                  </button>
+                  <div class="spacer"></div>
+                  <button class="smd-header__action mdl-button mdl-js-button mdl-button--icon">
+                    <i class="material-icons">search</i>
+                  </button>
+                  <button class="smd-header__action mdl-button mdl-js-button mdl-button--icon">
+                    <i class="material-icons">more_horizontal</i>
+                  </button>
+                </div>
+
+                <div class="smd-header__toolbar smd-header__toolbar--middle">
+
+                </div>
+
+                <div class="smd-header__toolbar smd-header__toolbar--bottom">
+                    <h1 class="smd-header__title">Header Title</h1>
+                </div>
+
+              </header>
+
+            </div>
+
+            <h2 class="styleguide__subtitle">Header component with fab</h2>
+
+            <div class="styleguide__preview">
+
+              <header class="smd-header smd-header--with-fab">
+
+                <div class="smd-header__toolbar smd-header__toolbar--top">
+                  <button class="smd-header__action mdl-button mdl-js-button mdl-button--icon">
+                    <i class="material-icons">arrow_back</i>
+                  </button>
+                  <div class="spacer"></div>
+                  <button class="smd-header__action mdl-button mdl-js-button mdl-button--icon">
+                    <i class="material-icons">search</i>
+                  </button>
+                  <button class="smd-header__action mdl-button mdl-js-button mdl-button--icon">
+                    <i class="material-icons">more_horizontal</i>
+                  </button>
+                </div>
+
+                <div class="smd-header__toolbar smd-header__toolbar--middle">
+
+                </div>
+
+                <div class="smd-header__toolbar smd-header__toolbar--bottom">
+                    <h1 class="smd-header__title">Header Title</h1>
+                </div>
+
+                <button class="smd-header__fab mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored">
+                  <i class="material-icons">add</i>
                 </button>
-                <div class="spacer"></div>
-                <button class="smd-header__action mdl-button mdl-js-button mdl-button--icon">
-                  <i class="material-icons">search</i>
+
+              </header>
+
+            </div>
+
+            <h2 class="styleguide__subtitle">Heading with right fab</h2>
+
+            <div class="styleguide__preview">
+
+              <header class="smd-header smd-header--with-fab">
+
+                <div class="smd-header__toolbar smd-header__toolbar--top">
+                  <button class="smd-header__action mdl-button mdl-js-button mdl-button--icon">
+                    <i class="material-icons">arrow_back</i>
+                  </button>
+                  <div class="spacer"></div>
+                  <button class="smd-header__action mdl-button mdl-js-button mdl-button--icon">
+                    <i class="material-icons">search</i>
+                  </button>
+                  <button class="smd-header__action mdl-button mdl-js-button mdl-button--icon">
+                    <i class="material-icons">more_horizontal</i>
+                  </button>
+                </div>
+
+                <div class="smd-header__toolbar smd-header__toolbar--middle">
+
+                </div>
+
+                <div class="smd-header__toolbar smd-header__toolbar--bottom">
+                    <h1 class="smd-header__title">Header Title</h1>
+                </div>
+
+                <button class="smd-header__fab smd-header__fab--right mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored">
+                  <i class="material-icons">add</i>
                 </button>
-                <button class="smd-header__action mdl-button mdl-js-button mdl-button--icon">
-                  <i class="material-icons">more_horizontal</i>
+
+              </header>
+
+            </div>
+            <h2 class="styleguide__subtitle">Heading with mini fab</h2>
+
+            <div class="styleguide__preview">
+
+              <header class="smd-header smd-header--with-fab">
+
+                <div class="smd-header__toolbar smd-header__toolbar--top">
+                  <button class="smd-header__action mdl-button mdl-js-button mdl-button--icon">
+                    <i class="material-icons">arrow_back</i>
+                  </button>
+                  <div class="spacer"></div>
+                  <button class="smd-header__action mdl-button mdl-js-button mdl-button--icon">
+                    <i class="material-icons">search</i>
+                  </button>
+                  <button class="smd-header__action mdl-button mdl-js-button mdl-button--icon">
+                    <i class="material-icons">more_horizontal</i>
+                  </button>
+                </div>
+
+                <div class="smd-header__toolbar smd-header__toolbar--middle">
+
+                </div>
+
+                <div class="smd-header__toolbar smd-header__toolbar--bottom">
+                    <h1 class="smd-header__title">Header Title</h1>
+                </div>
+
+                <button class="smd-header__mini-fab mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab mdl-js-ripple-effect mdl-button--colored">
+                  <i class="material-icons">add</i>
                 </button>
-              </div>
 
-              <div class="smd-header__toolbar smd-header__toolbar--middle">
+              </header>
 
-              </div>
+            </div>
+            <h2 class="styleguide__subtitle">Heading with right mini fab</h2>
 
-              <div class="smd-header__toolbar smd-header__toolbar--bottom">
-                  <h1 class="smd-header__title">Header Title</h1>
-              </div>
+            <div class="styleguide__preview">
 
-            </header>
+              <header class="smd-header smd-header--with-fab">
 
-          </div>
+                <div class="smd-header__toolbar smd-header__toolbar--top">
+                  <button class="smd-header__action mdl-button mdl-js-button mdl-button--icon">
+                    <i class="material-icons">arrow_back</i>
+                  </button>
+                  <div class="spacer"></div>
+                  <button class="smd-header__action mdl-button mdl-js-button mdl-button--icon">
+                    <i class="material-icons">search</i>
+                  </button>
+                  <button class="smd-header__action mdl-button mdl-js-button mdl-button--icon">
+                    <i class="material-icons">more_horizontal</i>
+                  </button>
+                </div>
 
-          <h2 class="styleguide__subtitle">Header component with image</h2>
+                <div class="smd-header__toolbar smd-header__toolbar--middle">
 
-          <div class="styleguide__preview">
+                </div>
 
-            <header class="smd-header">
+                <div class="smd-header__toolbar smd-header__toolbar--bottom">
+                    <h1 class="smd-header__title">Header Title</h1>
+                </div>
 
-              <div class="smd-header__cover-image" style="background-image: url('https://unsplash.it/1200/400?blur');">
-
-              </div>
-
-              <div class="smd-header__toolbar smd-header__toolbar--top">
-                <button class="smd-header__action mdl-button mdl-js-button mdl-button--icon">
-                  <i class="material-icons">arrow_back</i>
+                <button class="smd-header__mini-fab smd-header__mini-fab--right mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab mdl-js-ripple-effect mdl-button--colored">
+                  <i class="material-icons">add</i>
                 </button>
-                <div class="spacer"></div>
-                <button class="smd-header__action mdl-button mdl-js-button mdl-button--icon">
-                  <i class="material-icons">search</i>
-                </button>
-                <button class="smd-header__action mdl-button mdl-js-button mdl-button--icon">
-                  <i class="material-icons">more_horizontal</i>
-                </button>
-              </div>
 
-              <div class="smd-header__toolbar smd-header__toolbar--middle">
+              </header>
 
-              </div>
+            </div>
 
-              <div class="smd-header__toolbar smd-header__toolbar--bottom">
-                  <h1 class="smd-header__title">Header Title</h1>
-              </div>
+          </section>
 
-            </header>
 
-          </div>
+          <section id="item">
+            <h1 class="styleguide__title">Item</h1>
+            <h2 class="styleguide__subtitle">List item examples</h2>
 
-          <h2 class="styleguide__subtitle">Minimized header component</h2>
+            <p class="styleguide__text">Example of a list with all the trimmings. Avatar, label and action.</p>
 
-          <div class="styleguide__preview">
+            <div class="styleguide__preview">
 
-            <header class="smd-header smd-header--minimized">
+              <ul class="smd-list">
+                <li class="smd-item">
+                  <div class="smd-item__column smd-item__column--left smd-item__column--avatar">
+                    <img class="smd-item__avatar smd-item__avatar--round" src="http://i.pravatar.cc/80" alt="Avatar" />
+                  </div>
+                  <div class="smd-item__column smd-item__column--middle">
+                    <h1 class="smd-item__title">Brunch this weekend?</h1>
+                    <p class="smd-item__meta"><strong>Ali Connors</strong> - I'll be in your neighborhood parturient in elit commodo turpis volutpat risus montes arcu rutrum turpis malesuada ac consectetur quam a.</p>
+                  </div>
+                  <div class="smd-item__column smd-item__column--right smd-item__column--action">
+                    <span class="smd-item__label">15 min</span>
+                    <button class="smd-item__action smd-item__action--labeled mdl-button mdl-js-button mdl-button--icon">
+                      <i class="material-icons">info_circle</i>
+                    </button>
+                  </div>
+                </li>
+                <li class="smd-item">
+                  <div class="smd-item__column smd-item__column--left smd-item__column--avatar">
+                    <img class="smd-item__avatar smd-item__avatar--round" src="http://i.pravatar.cc/80" alt="Avatar" />
+                  </div>
+                  <div class="smd-item__column smd-item__column--middle">
+                    <h1 class="smd-item__title">Brunch this weekend?</h1>
+                    <p class="smd-item__meta"><strong>Ali Connors</strong> - I'll be in your neighborhood parturient in elit commodo turpis volutpat risus montes arcu rutrum turpis malesuada ac consectetur quam a.</p>
+                  </div>
+                  <div class="smd-item__column smd-item__column--right smd-item__column--action">
+                    <span class="smd-item__label">20 min</span>
+                    <button class="smd-item__action smd-item__action--labeled mdl-button mdl-js-button mdl-button--icon">
+                      <i class="material-icons">info_circle</i>
+                    </button>
+                  </div>
+                </li>
+              </ul>
 
-              <div class="smd-header__toolbar smd-header__toolbar--top">
-                <button class="smd-header__action mdl-button mdl-js-button mdl-button--icon">
-                  <i class="material-icons">arrow_back</i>
-                </button>
-                <div class="spacer"></div>
-                <button class="smd-header__action mdl-button mdl-js-button mdl-button--icon">
-                  <i class="material-icons">search</i>
-                </button>
-                <button class="smd-header__action mdl-button mdl-js-button mdl-button--icon">
-                  <i class="material-icons">more_horizontal</i>
-                </button>
-              </div>
+            </div>
 
-              <div class="smd-header__toolbar smd-header__toolbar--middle">
+            <p class="styleguide__text">Three lined list with no right section</p>
 
-              </div>
+            <div class="styleguide__preview">
 
-              <div class="smd-header__toolbar smd-header__toolbar--bottom">
-                  <h1 class="smd-header__title">Header Title</h1>
-              </div>
+              <ul class="smd-list">
+                <li class="smd-item smd-item--no-right">
+                  <div class="smd-item__column smd-item__column--left smd-item__column--avatar">
+                    <img class="smd-item__avatar smd-item__avatar--round" src="http://i.pravatar.cc/80" alt="Avatar" />
+                  </div>
+                  <div class="smd-item__column smd-item__column--middle">
+                    <h1 class="smd-item__title">Three Line Item</h1>
+                    <p class="smd-item__meta smd-item__meta--two-lines">I'll be in your neighborhood parturient in elit commodo turpis volutpat risus montes arcu rutrum turpis malesuada ac consectetur quam a.</p>
+                  </div>
+                </li>
+                <li class="smd-item smd-item--no-right">
+                  <div class="smd-item__column smd-item__column--left smd-item__column--avatar">
+                    <img class="smd-item__avatar smd-item__avatar--round" src="http://i.pravatar.cc/80" alt="Avatar" />
+                  </div>
+                  <div class="smd-item__column smd-item__column--middle">
+                    <h1 class="smd-item__title">Three Line Item</h1>
+                    <p class="smd-item__meta smd-item__meta--two-lines">I'll be in your neighborhood parturient in elit commodo turpis volutpat risus montes arcu rutrum turpis malesuada ac consectetur quam a.</p>
+                  </div>
+                </li>
+              </ul>
 
-            </header>
+            </div>
 
-          </div>
+            <p class="styleguide__text">Three lined list with a subtitle</p>
 
-          <h2 class="styleguide__subtitle">Header component with fab</h2>
+            <div class="styleguide__preview">
 
-          <div class="styleguide__preview">
+              <ul class="smd-list">
+                <li class="smd-item smd-item--no-right">
+                  <div class="smd-item__column smd-item__column--left smd-item__column--avatar">
+                    <img class="smd-item__avatar smd-item__avatar--round" src="http://i.pravatar.cc/80" alt="Avatar" />
+                  </div>
+                  <div class="smd-item__column smd-item__column--middle">
+                    <h1 class="smd-item__title smd-item__title--with-subtitle">Item with subtitle</h1>
+                    <h2 class="smd-item__sub-title">Jill Smith</h2>
+                    <p class="smd-item__meta smd-item__meta--with-subtitle">I'll be in your neighborhood parturient in elit commodo turpis volutpat risus montes arcu rutrum turpis malesuada ac consectetur quam a.</p>
+                  </div>
+                </li>
+                <li class="smd-item smd-item--no-right">
+                  <div class="smd-item__column smd-item__column--left smd-item__column--avatar">
+                    <img class="smd-item__avatar smd-item__avatar--round" src="http://i.pravatar.cc/80" alt="Avatar" />
+                  </div>
+                  <div class="smd-item__column smd-item__column--middle">
+                    <h1 class="smd-item__title smd-item__title--with-subtitle">Item with subtitle</h1>
+                    <h2 class="smd-item__sub-title">Jill Smith</h2>
+                    <p class="smd-item__meta smd-item__meta--with-subtitle">I'll be in your neighborhood parturient in elit commodo turpis volutpat risus montes arcu rutrum turpis malesuada ac consectetur quam a.</p>
+                  </div>
+                </li>
+              </ul>
 
-            <header class="smd-header smd-header--with-fab">
+            </div>
 
-              <div class="smd-header__toolbar smd-header__toolbar--top">
-                <button class="smd-header__action mdl-button mdl-js-button mdl-button--icon">
-                  <i class="material-icons">arrow_back</i>
-                </button>
-                <div class="spacer"></div>
-                <button class="smd-header__action mdl-button mdl-js-button mdl-button--icon">
-                  <i class="material-icons">search</i>
-                </button>
-                <button class="smd-header__action mdl-button mdl-js-button mdl-button--icon">
-                  <i class="material-icons">more_horizontal</i>
-                </button>
-              </div>
+            <p class="styleguide__text">List with a label</p>
 
-              <div class="smd-header__toolbar smd-header__toolbar--middle">
+            <div class="styleguide__preview">
 
-              </div>
+              <ul class="smd-list">
+                <li class="smd-item">
+                  <div class="smd-item__column smd-item__column--left smd-item__column--avatar">
+                    <img class="smd-item__avatar smd-item__avatar--round" src="http://i.pravatar.cc/80" alt="Avatar" />
+                  </div>
+                  <div class="smd-item__column smd-item__column--middle">
+                    <h1 class="smd-item__title">Brunch this weekend?</h1>
+                    <p class="smd-item__meta"><strong>Ali Connors</strong> - I'll be in your neighborhood parturient in elit commodo turpis volutpat risus montes arcu rutrum turpis malesuada ac consectetur quam a.</p>
+                  </div>
+                  <div class="smd-item__column smd-item__column--right smd-item__column--action">
+                    <span class="smd-item__label">15 min</span>
+                  </div>
+                </li>
+                <li class="smd-item">
+                  <div class="smd-item__column smd-item__column--left smd-item__column--avatar">
+                    <img class="smd-item__avatar smd-item__avatar--round" src="http://i.pravatar.cc/80" alt="Avatar" />
+                  </div>
+                  <div class="smd-item__column smd-item__column--middle">
+                    <h1 class="smd-item__title">Brunch this weekend?</h1>
+                    <p class="smd-item__meta"><strong>Ali Connors</strong> - I'll be in your neighborhood parturient in elit commodo turpis volutpat risus montes arcu rutrum turpis malesuada ac consectetur quam a.</p>
+                  </div>
+                  <div class="smd-item__column smd-item__column--right smd-item__column--action">
+                    <span class="smd-item__label">20 min</span>
+                  </div>
+                </li>
+              </ul>
 
-              <div class="smd-header__toolbar smd-header__toolbar--bottom">
-                  <h1 class="smd-header__title">Header Title</h1>
-              </div>
+            </div>
 
-              <button class="smd-header__fab mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored">
-                <i class="material-icons">add</i>
-              </button>
+            <p class="styleguide__text">List with icon avatars</p>
 
-            </header>
+            <div class="styleguide__preview">
 
-          </div>
+              <ul class="smd-list">
+                <li class="smd-item">
+                  <div class="smd-item__column smd-item__column--left smd-item__column--avatar">
+                    <i class="smd-item__icon material-icons">person</i>
+                  </div>
+                  <div class="smd-item__column smd-item__column--middle">
+                    <h1 class="smd-item__title">Ullamcorper venenatis blandit</h1>
+                    <p class="smd-item__meta">Turpis malesuada ac consectetur quam parturient in elit commodo turpis volutpat risus montes arcu rutrum a.</p>
+                  </div>
+                  <div class="smd-item__column smd-item__column--right smd-item__column--action">
+                    <button class="smd-item__action mdl-button mdl-js-button mdl-button--icon">
+                      <i class="material-icons">info_circle</i>
+                    </button>
+                  </div>
+                </li>
+                <li class="smd-item">
+                  <div class="smd-item__column smd-item__column--left smd-item__column--avatar">
+                    <i class="smd-item__icon material-icons">person</i>
+                  </div>
+                  <div class="smd-item__column smd-item__column--middle">
+                    <h1 class="smd-item__title">Ullamcorper venenatis blandit</h1>
+                    <p class="smd-item__meta">Turpis malesuada ac consectetur quam parturient in elit commodo turpis volutpat risus montes arcu rutrum a.</p>
+                  </div>
+                  <div class="smd-item__column smd-item__column--right smd-item__column--action">
+                    <button class="smd-item__action mdl-button mdl-js-button mdl-button--icon">
+                      <i class="material-icons">info_circle</i>
+                    </button>
+                  </div>
+                </li>
+              </ul>
 
-          <h2 class="styleguide__subtitle">Heading with right fab</h2>
+            </div>
 
-          <div class="styleguide__preview">
+            <p class="styleguide__text">List with rounded icon avatar</p>
 
-            <header class="smd-header smd-header--with-fab">
+            <div class="styleguide__preview">
 
-              <div class="smd-header__toolbar smd-header__toolbar--top">
-                <button class="smd-header__action mdl-button mdl-js-button mdl-button--icon">
-                  <i class="material-icons">arrow_back</i>
-                </button>
-                <div class="spacer"></div>
-                <button class="smd-header__action mdl-button mdl-js-button mdl-button--icon">
-                  <i class="material-icons">search</i>
-                </button>
-                <button class="smd-header__action mdl-button mdl-js-button mdl-button--icon">
-                  <i class="material-icons">more_horizontal</i>
-                </button>
-              </div>
+              <ul class="smd-list">
+                <li class="smd-item">
+                  <div class="smd-item__column smd-item__column--left smd-item__column--avatar">
+                    <i class="smd-item__icon smd-item__icon--round material-icons">person</i>
+                  </div>
+                  <div class="smd-item__column smd-item__column--middle">
+                    <h1 class="smd-item__title">Non condimentum a neque</h1>
+                    <p class="smd-item__meta">Parturient in elit commodo turpis volutpat risus montes arcu rutrum turpis malesuada ac consectetur quam a.</p>
+                  </div>
+                  <div class="smd-item__column smd-item__column--right smd-item__column--action">
+                    <button class="smd-item__action mdl-button mdl-js-button mdl-button--icon">
+                      <i class="material-icons">info_circle</i>
+                    </button>
+                  </div>
+                </li>
+                <li class="smd-item">
+                  <div class="smd-item__column smd-item__column--left smd-item__column--avatar">
+                    <i class="smd-item__icon smd-item__icon--round material-icons">person</i>
+                  </div>
+                  <div class="smd-item__column smd-item__column--middle">
+                    <h1 class="smd-item__title">Non condimentum a neque</h1>
+                    <p class="smd-item__meta">Parturient in elit commodo turpis volutpat risus montes arcu rutrum turpis malesuada ac consectetur quam a.</p>
+                  </div>
+                  <div class="smd-item__column smd-item__column--right smd-item__column--action">
+                    <button class="smd-item__action mdl-button mdl-js-button mdl-button--icon">
+                      <i class="material-icons">info_circle</i>
+                    </button>
+                  </div>
+                </li>
+              </ul>
 
-              <div class="smd-header__toolbar smd-header__toolbar--middle">
+            </div>
 
-              </div>
+            <p class="styleguide__text">List with action on left and avatar on the right</p>
 
-              <div class="smd-header__toolbar smd-header__toolbar--bottom">
-                  <h1 class="smd-header__title">Header Title</h1>
-              </div>
+            <div class="styleguide__preview">
 
-              <button class="smd-header__fab smd-header__fab--right mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored">
-                <i class="material-icons">add</i>
-              </button>
+              <ul class="smd-list">
+                <li class="smd-item">
+                  <div class="smd-item__column smd-item__column--left smd-item__column--action">
+                    <button class="smd-item__action mdl-button mdl-js-button mdl-button--icon">
+                      <i class="material-icons">star</i>
+                    </button>
+                  </div>
+                  <div class="smd-item__column smd-item__column--middle">
+                    <h1 class="smd-item__title">Dapibus cras a condimentum tellus.</h1>
+                    <p class="smd-item__meta">Volutpat risus montes arcu rutrum turpis malesuada ac consectetur quam a.</p>
+                  </div>
+                  <div class="smd-item__column smd-item__column--right smd-item__column--avatar">
+                    <img class="smd-item__avatar smd-item__avatar--round" src="http://i.pravatar.cc/80" alt="Avatar" />
+                  </div>
+                </li>
+                <li class="smd-item">
+                  <div class="smd-item__column smd-item__column--left smd-item__column--action">
+                    <button class="smd-item__action mdl-button mdl-js-button mdl-button--icon">
+                      <i class="material-icons">star</i>
+                    </button>
+                  </div>
+                  <div class="smd-item__column smd-item__column--middle">
+                    <h1 class="smd-item__title">Dapibus cras a condimentum tellus.</h1>
+                    <p class="smd-item__meta">Volutpat risus montes arcu rutrum turpis malesuada ac consectetur quam a.</p>
+                  </div>
+                  <div class="smd-item__column smd-item__column--right smd-item__column--avatar">
+                    <img class="smd-item__avatar smd-item__avatar--round" src="http://i.pravatar.cc/80" alt="Avatar" />
+                  </div>
+                </li>
+              </ul>
 
-            </header>
+            </div>
 
-          </div>
-          <h2 class="styleguide__subtitle">Heading with mini fab</h2>
+            <p class="styleguide__text">List item with seperator</p>
 
-          <div class="styleguide__preview">
+            <div class="styleguide__preview">
 
-            <header class="smd-header smd-header--with-fab">
+              <ul class="smd-list smd-list--border">
+                <li class="smd-item smd-item--border">
+                  <div class="smd-item__column smd-item__column--left smd-item__column--avatar">
+                    <img class="smd-item__avatar smd-item__avatar--round" src="http://i.pravatar.cc/80" alt="Avatar" />
+                  </div>
+                  <div class="smd-item__column smd-item__column--middle">
+                    <h1 class="smd-item__title">Brunch this weekend?</h1>
+                    <p class="smd-item__meta"><strong>Ali Connors</strong> - I'll be in your neighborhood parturient in elit commodo turpis volutpat risus montes arcu rutrum turpis malesuada ac consectetur quam a.</p>
+                  </div>
+                  <div class="smd-item__column smd-item__column--right smd-item__column--action">
+                    <button class="smd-item__action mdl-button mdl-js-button mdl-button--icon">
+                      <i class="material-icons">more_horizontal</i>
+                    </button>
+                  </div>
+                </li>
+                <li class="smd-item smd-item--border">
+                  <div class="smd-item__column smd-item__column--left smd-item__column--avatar">
+                    <img class="smd-item__avatar smd-item__avatar--round" src="http://i.pravatar.cc/80" alt="Avatar" />
+                  </div>
+                  <div class="smd-item__column smd-item__column--middle">
+                    <h1 class="smd-item__title">Brunch this weekend?</h1>
+                    <p class="smd-item__meta"><strong>Ali Connors</strong> - I'll be in your neighborhood parturient in elit commodo turpis volutpat risus montes arcu rutrum turpis malesuada ac consectetur quam a.</p>
+                  </div>
+                  <div class="smd-item__column smd-item__column--right smd-item__column--action">
+                    <button class="smd-item__action mdl-button mdl-js-button mdl-button--icon">
+                      <i class="material-icons">more_horizontal</i>
+                    </button>
+                  </div>
+                </li>
+              </ul>
 
-              <div class="smd-header__toolbar smd-header__toolbar--top">
-                <button class="smd-header__action mdl-button mdl-js-button mdl-button--icon">
-                  <i class="material-icons">arrow_back</i>
-                </button>
-                <div class="spacer"></div>
-                <button class="smd-header__action mdl-button mdl-js-button mdl-button--icon">
-                  <i class="material-icons">search</i>
-                </button>
-                <button class="smd-header__action mdl-button mdl-js-button mdl-button--icon">
-                  <i class="material-icons">more_horizontal</i>
-                </button>
-              </div>
+            </div>
 
-              <div class="smd-header__toolbar smd-header__toolbar--middle">
+            <p class="styleguide__text">List with no left section</p>
 
-              </div>
+            <div class="styleguide__preview">
 
-              <div class="smd-header__toolbar smd-header__toolbar--bottom">
-                  <h1 class="smd-header__title">Header Title</h1>
-              </div>
+              <ul class="smd-list">
+                <li class="smd-item smd-item--no-left">
+                  <div class="smd-item__column smd-item__column--middle">
+                    <h1 class="smd-item__title">Brunch this weekend?</h1>
+                    <p class="smd-item__meta"><strong>Ali Connors</strong> - I'll be in your neighborhood parturient in elit commodo turpis volutpat risus montes arcu rutrum turpis malesuada ac consectetur quam a.</p>
+                  </div>
+                  <div class="smd-item__column smd-item__column--right smd-item__column--action">
+                    <button class="smd-item__action mdl-button mdl-js-button mdl-button--icon">
+                      <i class="material-icons">info_circle</i>
+                    </button>
+                  </div>
+                </li>
+                <li class="smd-item smd-item--no-left">
+                  <div class="smd-item__column smd-item__column--middle">
+                    <h1 class="smd-item__title">Brunch this weekend?</h1>
+                    <p class="smd-item__meta"><strong>Ali Connors</strong> - I'll be in your neighborhood parturient in elit commodo turpis volutpat risus montes arcu rutrum turpis malesuada ac consectetur quam a.</p>
+                  </div>
+                  <div class="smd-item__column smd-item__column--right smd-item__column--action">
+                    <button class="smd-item__action mdl-button mdl-js-button mdl-button--icon">
+                      <i class="material-icons">info_circle</i>
+                    </button>
+                  </div>
+                </li>
+              </ul>
 
-              <button class="smd-header__mini-fab mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab mdl-js-ripple-effect mdl-button--colored">
-                <i class="material-icons">add</i>
-              </button>
+            </div>
 
-            </header>
+            <p class="styleguide__text">Three lined list with no right section</p>
 
-          </div>
-          <h2 class="styleguide__subtitle">Heading with right mini fab</h2>
+            <div class="styleguide__preview">
 
-          <div class="styleguide__preview">
+              <ul class="smd-list">
+                <li class="smd-item smd-item--no-right">
+                  <div class="smd-item__column smd-item__column--left smd-item__column--avatar">
+                    <img class="smd-item__avatar smd-item__avatar--round" src="http://i.pravatar.cc/80" alt="Avatar" />
+                  </div>
+                  <div class="smd-item__column smd-item__column--middle">
+                    <h1 class="smd-item__title">Brunch this weekend?</h1>
+                    <p class="smd-item__meta"><strong>Ali Connors</strong> - I'll be in your neighborhood parturient in elit commodo turpis volutpat risus montes arcu rutrum turpis malesuada ac consectetur quam a.</p>
+                  </div>
+                </li>
+                <li class="smd-item smd-item--no-right">
+                  <div class="smd-item__column smd-item__column--left smd-item__column--avatar">
+                    <img class="smd-item__avatar smd-item__avatar--round" src="http://i.pravatar.cc/80" alt="Avatar" />
+                  </div>
+                  <div class="smd-item__column smd-item__column--middle">
+                    <h1 class="smd-item__title">Brunch this weekend?</h1>
+                    <p class="smd-item__meta"><strong>Ali Connors</strong> - I'll be in your neighborhood parturient in elit commodo turpis volutpat risus montes arcu rutrum turpis malesuada ac consectetur quam a.</p>
+                  </div>
+                </li>
+              </ul>
 
-            <header class="smd-header smd-header--with-fab">
-
-              <div class="smd-header__toolbar smd-header__toolbar--top">
-                <button class="smd-header__action mdl-button mdl-js-button mdl-button--icon">
-                  <i class="material-icons">arrow_back</i>
-                </button>
-                <div class="spacer"></div>
-                <button class="smd-header__action mdl-button mdl-js-button mdl-button--icon">
-                  <i class="material-icons">search</i>
-                </button>
-                <button class="smd-header__action mdl-button mdl-js-button mdl-button--icon">
-                  <i class="material-icons">more_horizontal</i>
-                </button>
-              </div>
-
-              <div class="smd-header__toolbar smd-header__toolbar--middle">
-
-              </div>
-
-              <div class="smd-header__toolbar smd-header__toolbar--bottom">
-                  <h1 class="smd-header__title">Header Title</h1>
-              </div>
-
-              <button class="smd-header__mini-fab smd-header__mini-fab--right mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab mdl-js-ripple-effect mdl-button--colored">
-                <i class="material-icons">add</i>
-              </button>
-
-            </header>
-
-          </div>
+            </div>
+          </section>
 
         </div>
       </div>
