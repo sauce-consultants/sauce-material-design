@@ -10941,6 +10941,10 @@ _:-ms-input-placeholder, :root .mdl-slider.mdl-slider.is-upgraded {
     background-size: cover;
     background-position: center center;
     opacity: .8; }
+  .smd-header--with-fab {
+    margin-bottom: 1.75rem; }
+  .smd-header--with-mini-fab {
+    margin-bottom: 1.25rem; }
   .smd-header__title {
     font-family: "Roboto", "Helvetica", "Arial", sans-serif;
     font-size: 45px;

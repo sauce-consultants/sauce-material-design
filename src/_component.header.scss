@@ -15,6 +15,12 @@
     background-position: center center;
     opacity: .8;
   }
+  &--with-fab {
+    margin-bottom: 1.75rem;
+  }
+  &--with-mini-fab {
+    margin-bottom: 1.25rem;
+  }
 
   &__title {
     @include typo-display-2;
