@@ -10929,7 +10929,7 @@ _:-ms-input-placeholder, :root .mdl-slider.mdl-slider.is-upgraded {
 .smd-header {
   background: blue;
   color: white;
-  padding: 0;
+  padding: 0 0 1.75rem;
   position: relative; }
   .smd-header__cover-image {
     position: absolute;
@@ -10941,10 +10941,6 @@ _:-ms-input-placeholder, :root .mdl-slider.mdl-slider.is-upgraded {
     background-size: cover;
     background-position: center center;
     opacity: .8; }
-  .smd-header--with-fab {
-    margin-bottom: 1.75rem; }
-  .smd-header--with-mini-fab {
-    margin-bottom: 1.25rem; }
   .smd-header__title {
     font-family: "Roboto", "Helvetica", "Arial", sans-serif;
     font-size: 45px;
@@ -10982,18 +10978,22 @@ _:-ms-input-placeholder, :root .mdl-slider.mdl-slider.is-upgraded {
     .smd-header__mini-fab--right {
       left: auto;
       right: 1rem; }
-  .smd-header--minimized .smd-header__toolbar--middle, .smd-header--minimized .smd-header__toolbar--bottom {
-    left: 0;
-    position: absolute;
-    right: 0; }
-  .smd-header--minimized .smd-header__toolbar--middle {
-    top: 0; }
-  .smd-header--minimized .smd-header__toolbar--bottom {
-    bottom: 0; }
-  .smd-header--minimized .smd-header__title {
-    font-size: 30px; }
+  .smd-header--minimized {
+    padding: 0; }
+    .smd-header--minimized .smd-header__toolbar--middle, .smd-header--minimized .smd-header__toolbar--bottom {
+      left: 0;
+      position: absolute;
+      right: 0; }
+    .smd-header--minimized .smd-header__toolbar--middle {
+      top: 0; }
+    .smd-header--minimized .smd-header__toolbar--bottom {
+      bottom: 0; }
+    .smd-header--minimized .smd-header__title {
+      font-size: 30px; }
   .smd-header--with-fab {
-    padding-bottom: 1.75rem; }
+    margin-bottom: 1.75rem; }
+  .smd-header--with-mini-fab {
+    margin-bottom: 1.25rem; }
 
 .smd-list {
   margin: 0 0 2rem;

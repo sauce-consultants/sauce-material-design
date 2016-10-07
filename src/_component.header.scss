@@ -2,7 +2,7 @@
   //background: unquote("rgb(#{$color-primary;})");
   background: blue;
   color: white;
-  padding: 0;
+  padding: 0 0 1.75rem;
   position: relative;
   &__cover-image {
     position: absolute;
@@ -14,12 +14,6 @@
     background-size: cover;
     background-position: center center;
     opacity: .8;
-  }
-  &--with-fab {
-    margin-bottom: 1.75rem;
-  }
-  &--with-mini-fab {
-    margin-bottom: 1.25rem;
   }
 
   &__title {
@@ -71,6 +65,7 @@
   }
 
   &--minimized {
+    padding: 0;
     .smd-header__toolbar {
       &--middle,
       &--bottom {
@@ -90,6 +85,9 @@
     }
   }
   &--with-fab {
-    padding-bottom: 1.75rem;
+    margin-bottom: 1.75rem;
+  }
+  &--with-mini-fab {
+    margin-bottom: 1.25rem;
   }
 }
