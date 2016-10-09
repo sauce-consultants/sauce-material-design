@@ -1,0 +1,58 @@
+.smd-search-widget {
+  @include trans;
+  position: relative;
+  padding: 0 0 0 2.5rem;
+  color: #fff;
+  font-size: 16px;
+  height: 2.5rem;
+  margin: 0;
+  overflow: hidden;
+  width: 0px;
+  z-index: 2;
+
+  &__focus,
+  &__close {
+    $size: 2.5rem;
+    height: $size;
+    position: absolute;
+    top: 0;
+    width: $size;
+    &:hover,
+    &:focus {
+        background-color: transparent!important;
+    }
+  }
+  &__focus {
+    left: 0rem;
+  }
+  &__close {
+    right: 0rem;
+  }
+
+  &__close,
+  &__input {
+    @include hidden;
+  }
+  &__input {
+    @extend .mdl-textfield__input;
+    box-shadow: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.87);
+    padding: 5px 1.5rem 5px 0;
+    margin: .5rem 0 0;
+  }
+  input:focus {
+    outline: none;
+  }
+  input::-webkit-input-placeholder {
+    color: rgba(255, 255, 255, 0.87);
+  }
+
+  &.open {
+    padding-right: .5rem;
+    width: auto;
+  }
+  &.open &__input,
+  &.open &__close {
+    @include visible;
+  }
+}

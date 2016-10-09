@@ -9720,7 +9720,7 @@ _:-ms-input-placeholder, :root .mdl-slider.mdl-slider.is-upgraded {
   .mdl-textfield--expandable .mdl-button--icon {
     top: 16px; }
 
-.mdl-textfield__input {
+.mdl-textfield__input, .smd-search-widget__input {
   border: none;
   border-bottom: 1px solid rgba(0,0,0, 0.12);
   display: block;
@@ -9732,23 +9732,24 @@ _:-ms-input-placeholder, :root .mdl-slider.mdl-slider.is-upgraded {
   background: none;
   text-align: left;
   color: inherit; }
-  .mdl-textfield__input[type="number"] {
+  .mdl-textfield__input[type="number"], [type="number"].smd-search-widget__input {
     -moz-appearance: textfield; }
-  .mdl-textfield__input[type="number"]::-webkit-inner-spin-button, .mdl-textfield__input[type="number"]::-webkit-outer-spin-button {
+  .mdl-textfield__input[type="number"]::-webkit-inner-spin-button, [type="number"].smd-search-widget__input::-webkit-inner-spin-button, .mdl-textfield__input[type="number"]::-webkit-outer-spin-button, [type="number"].smd-search-widget__input::-webkit-outer-spin-button {
     -webkit-appearance: none;
     margin: 0; }
-  .mdl-textfield.is-focused .mdl-textfield__input {
+  .mdl-textfield.is-focused .mdl-textfield__input, .mdl-textfield.is-focused .smd-search-widget__input {
     outline: none; }
-  .mdl-textfield.is-invalid .mdl-textfield__input {
+  .mdl-textfield.is-invalid .mdl-textfield__input, .mdl-textfield.is-invalid .smd-search-widget__input {
     border-color: rgb(213,0,0);
     box-shadow: none; }
-  fieldset[disabled] .mdl-textfield .mdl-textfield__input,
-  .mdl-textfield.is-disabled .mdl-textfield__input {
+  fieldset[disabled] .mdl-textfield .mdl-textfield__input, fieldset[disabled] .mdl-textfield .smd-search-widget__input,
+  .mdl-textfield.is-disabled .mdl-textfield__input,
+  .mdl-textfield.is-disabled .smd-search-widget__input {
     background-color: transparent;
     border-bottom: 1px dotted rgba(0,0,0, 0.12);
     color: rgba(0,0,0, 0.26); }
 
-.mdl-textfield textarea.mdl-textfield__input {
+.mdl-textfield textarea.mdl-textfield__input, .mdl-textfield textarea.smd-search-widget__input {
   display: block; }
 
 .mdl-textfield__label {
@@ -11096,6 +11097,51 @@ _:-ms-input-placeholder, :root .mdl-slider.mdl-slider.is-upgraded {
     line-height: 1.5rem;
     text-align: center;
     margin-top: .5rem; }
+
+.smd-search-widget {
+  transition-duration: .2s;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  padding: 0 0 0 2.5rem;
+  color: #fff;
+  font-size: 16px;
+  height: 2.5rem;
+  margin: 0;
+  overflow: hidden;
+  width: 0px;
+  z-index: 2; }
+  .smd-search-widget__focus, .smd-search-widget__close {
+    height: 2.5rem;
+    position: absolute;
+    top: 0;
+    width: 2.5rem; }
+    .smd-search-widget__focus:hover, .smd-search-widget__focus:focus, .smd-search-widget__close:hover, .smd-search-widget__close:focus {
+      background-color: transparent !important; }
+  .smd-search-widget__focus {
+    left: 0rem; }
+  .smd-search-widget__close {
+    right: 0rem; }
+  .smd-search-widget__close, .smd-search-widget__input {
+    display: none;
+    opacity: 0;
+    visibility: hidden; }
+  .smd-search-widget__input {
+    box-shadow: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.87);
+    padding: 5px 1.5rem 5px 0;
+    margin: .5rem 0 0; }
+  .smd-search-widget input:focus {
+    outline: none; }
+  .smd-search-widget input::-webkit-input-placeholder {
+    color: rgba(255, 255, 255, 0.87); }
+  .smd-search-widget.open {
+    padding-right: .5rem;
+    width: auto; }
+  .smd-search-widget.open .smd-search-widget__input,
+  .smd-search-widget.open .smd-search-widget__close {
+    display: block;
+    opacity: 1;
+    visibility: visible; }
 
 .spacer {
   flex: 1;

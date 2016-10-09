@@ -2,3 +2,11 @@
   transition-duration: .2s;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+@mixin hidden {
+    display: none;
+    opacity: 0;
+}
+@mixin visible {
+  display: block;
+  opacity: 1;
+}
