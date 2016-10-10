@@ -71,7 +71,7 @@ $list-meta-color: unquote("rgba(#{$color-black}, 0.54)");
       background-color: $list-action-color;
       height: $size;
       margin: 0;
-      line-height: $size;
+      line-height: $size!important;
       text-align: center;
       width: $size;
     }
