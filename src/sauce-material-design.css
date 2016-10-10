@@ -11136,7 +11136,7 @@ _:-ms-input-placeholder, :root .mdl-slider.mdl-slider.is-upgraded {
     color: rgba(255, 255, 255, 0.87); }
   .smd-search-widget.open {
     padding-right: .5rem;
-    width: auto; }
+    width: 22rem; }
   .smd-search-widget.open .smd-search-widget__input,
   .smd-search-widget.open .smd-search-widget__close {
     display: block;
