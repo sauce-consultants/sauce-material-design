@@ -85,6 +85,9 @@ $list-meta-color: unquote("rgba(#{$color-black}, 0.54)");
     &--with-subtitle {
       line-height: 1;
     }
+    &--solo {
+      line-height: 2.5rem;
+    }
   }
   &__sub-title {
     @include truncate;

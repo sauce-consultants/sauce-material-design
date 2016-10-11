@@ -11148,6 +11148,8 @@ html, body {
     margin: 0; }
     .smd-item__title--with-subtitle {
       line-height: 1; }
+    .smd-item__title--solo {
+      line-height: 2.5rem; }
   .smd-item__sub-title {
     white-space: nowrap;
     overflow: hidden;
