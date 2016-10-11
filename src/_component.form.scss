@@ -1,0 +1,98 @@
+.smd-form {
+  &__control {
+    display: block;
+    margin-bottom: 1rem;
+    .mdl-slider__container {
+      height: 27px;
+    }
+    .mdl-slider__background-flex {
+      margin: 0;
+    }
+    &--select {
+      &::before {
+        $size: 1.75rem;
+        display: block;
+        color: rgb(97,97,97);
+        content: 'arrow_drop_down';
+        cursor: pointer;
+        height: $size;
+        line-height: $size;
+        font-size: 1.25rem;
+        font-family: 'Material Icons';
+        font-weight: normal;
+        font-style: normal;
+        position: absolute;
+        text-align: center;
+        top: 20px;
+        right: 0;
+        min-width: $size;
+        width: $size;
+        z-index: 1;
+      }
+    }
+  }
+  &__input {
+    &--color {
+      $size: 2rem;
+      height: $size;
+      padding: 0;
+      width: $size;
+      border-bottom: none;
+      line-height: 1;
+      display: block;
+    }
+    &--range {
+      margin: 0!important;
+    }
+    &--select {
+      border-radius: 0;
+      position: relative;
+      z-index: 2;
+      -webkit-appearance: none;
+      -webkit-border-radius: 0px;
+    }
+  }
+  &__label {
+    &--fixed {
+      top:4px;
+      font-size: .75rem;
+      visibility: visible;
+    }
+  }
+  &__group {
+    display: flex;
+    margin:0 -0.5rem;
+    > * {
+      margin: 0 .5rem;
+    }
+  }
+  &__fieldset {
+    border: 1px solid $c-border;
+    padding: 1rem;
+    .smd-form__control {
+      display: block;
+    }
+  }
+  &__legend {
+    color:$c-label;
+    padding: 0;
+  }
+
+  &__error,
+  &__warning,
+  &__tip {
+    color: $c-label;
+    position: absolute;
+    font-size: 12px;
+    margin-top: 3px;
+  }
+  .is-focused &__tip {
+    color: $c-text;
+  }
+  &__error {
+    color: $c-error;
+  }
+  &__warning {
+    color: $c-warning;
+  }
+}

@@ -1,11 +1,15 @@
 //@import "./bower_components/material-design-lite/src/_color-definitions";
 @import "./bower_components/material-design-lite/src/material-design-lite.scss";
 
+@import "settings.color";
 @import "settings.type";
+
+@import "generic.base";
 
 @import "tools.animation";
 @import "tools.type";
 
+@import "component.form";
 @import "component.header";
 @import "component.item";
 @import "component.search-widget";

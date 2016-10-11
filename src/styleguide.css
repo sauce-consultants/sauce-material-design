@@ -10927,6 +10927,95 @@ _:-ms-input-placeholder, :root .mdl-slider.mdl-slider.is-upgraded {
     .mdl-cell--11-offset-desktop.mdl-cell--11-offset-desktop {
       margin-left: 91.66667%; } }
 
+html, body {
+  height: 100%;
+  font-size: 100%;
+  padding: 0;
+  margin: 0; }
+
+* {
+  box-sizing: border-box; }
+
+.smd-form__control {
+  display: block;
+  margin-bottom: 1rem; }
+  .smd-form__control .mdl-slider__container {
+    height: 27px; }
+  .smd-form__control .mdl-slider__background-flex {
+    margin: 0; }
+  .smd-form__control--select::before {
+    display: block;
+    color: #616161;
+    content: 'arrow_drop_down';
+    cursor: pointer;
+    height: 1.75rem;
+    line-height: 1.75rem;
+    font-size: 1.25rem;
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    position: absolute;
+    text-align: center;
+    top: 20px;
+    right: 0;
+    min-width: 1.75rem;
+    width: 1.75rem;
+    z-index: 1; }
+
+.smd-form__input--color {
+  height: 2rem;
+  padding: 0;
+  width: 2rem;
+  border-bottom: none;
+  line-height: 1;
+  display: block; }
+
+.smd-form__input--range {
+  margin: 0 !important; }
+
+.smd-form__input--select {
+  border-radius: 0;
+  position: relative;
+  z-index: 2;
+  -webkit-appearance: none;
+  -webkit-border-radius: 0px; }
+
+.smd-form__label--fixed {
+  top: 4px;
+  font-size: .75rem;
+  visibility: visible; }
+
+.smd-form__group {
+  display: flex;
+  margin: 0 -0.5rem; }
+  .smd-form__group > * {
+    margin: 0 .5rem; }
+
+.smd-form__fieldset {
+  border: 1px solid rgb(224,224,224);
+  padding: 1rem; }
+  .smd-form__fieldset .smd-form__control {
+    display: block; }
+
+.smd-form__legend {
+  color: rgba(0,0,0, 0.26);
+  padding: 0; }
+
+.smd-form__error, .smd-form__warning, .smd-form__tip {
+  color: rgba(0,0,0, 0.26);
+  position: absolute;
+  font-size: 12px;
+  margin-top: 3px; }
+
+.is-focused .smd-form__tip {
+  color: rgba(0,0,0, 0.54); }
+
+.smd-form__error {
+  color: rgb(213,0,0); }
+
+.smd-form__warning {
+  color: rgb(255,109,0); }
+
 .smd-header {
   background: blue;
   color: white;
@@ -11182,6 +11271,12 @@ body {
   padding: 2rem 0;
   border-bottom: 1px solid rgb(224,224,224);
   border-top: 1px dashed rgb(224,224,224); }
+  .styleguide__preview--padder {
+    padding-left: 2rem;
+    padding-right: 2rem; }
+
+.styleguide__padder {
+  margin: 0 2rem; }
 
 .mdl-styleguide .mdl-layout__drawer .mdl-navigation__link {
   padding: 10px 24px; }

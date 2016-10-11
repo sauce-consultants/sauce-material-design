@@ -21,6 +21,7 @@
         <nav id="main-navigation" class="mdl-navigation">
           <a class="mdl-navigation__link" href="#header">Header</a>
           <a class="mdl-navigation__link" href="#item">Item</a>
+          <a class="mdl-navigation__link" href="#form">Form</a>
         </nav>
       </div>
 
@@ -695,10 +696,38 @@
             </div>
           </section>
 
+          <section id="form">
+
+            <h1 class="styleguide__title">Form</h1>
+
+            <h2 class="styleguide__subtitle">Basic form controls</h2>
+
+            <div class="styleguide__preview styleguide__preview--padder">
+              <div class="smd-form__control mdl-textfield mdl-js-textfield smd-form__control--text mdl-textfield--floating-label">
+                <input name="text" type="text" class="mdl-textfield__input smd-form__input smd-form__input--text ">
+                <label class="mdl-textfield__label smd-form__label" for="text">Text Field</label>
+                <div class="smd-form__tip">Just the tip mam</div>
+              </div>
+
+              <div class="smd-form__control mdl-textfield mdl-js-textfield smd-form__control--textarea mdl-textfield--floating-label">
+                <textarea rows="3" name="textarea" class="mdl-textfield__input smd-form__input smd-form__input--textarea"></textarea>
+                <label class="mdl-textfield__label smd-form__label" for="textarea">Textarea Field</label>
+              </div>
+
+              <div class="smd-form__control mdl-textfield mdl-js-textfield smd-form__control--date mdl-textfield--floating-label">
+                <input name="date" type="date" class="mdl-textfield__input smd-form__input smd-form__input--date">
+                <label class="mdl-textfield__label smd-form__label smd-form__label--fixed" for="date">Date Field</label>
+              </div>
+
+            </div>
+
+          </section>
+
         </div>
       </div>
     </div>
 
     <script async src="http://assets.codepen.io/assets/embed/ei.js"></script>
+    <script defer src="https://code.getmdl.io/1.2.1/material.min.js"></script>
   </body>
 </html>
