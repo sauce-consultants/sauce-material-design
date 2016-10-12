@@ -1,0 +1,18 @@
+.smd-dropdown {
+  position: relative;
+  .mdl-menu {
+    &__item {
+      &--icon {
+        padding-right: 3rem;
+      }
+    }
+    &__item-icon {
+      position: absolute;
+      right: .75rem;
+      top: .75rem;
+      &.material-icons {
+        color: $c-text;
+      }
+    }
+  }
+}

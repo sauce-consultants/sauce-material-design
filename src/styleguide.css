@@ -11234,6 +11234,17 @@ html, body {
     opacity: 1;
     visibility: visible; }
 
+.smd-dropdown {
+  position: relative; }
+  .smd-dropdown .mdl-menu__item--icon {
+    padding-right: 3rem; }
+  .smd-dropdown .mdl-menu__item-icon {
+    position: absolute;
+    right: .75rem;
+    top: .75rem; }
+    .smd-dropdown .mdl-menu__item-icon.material-icons {
+      color: rgba(0,0,0, 0.54); }
+
 .spacer {
   flex: 1;
   flex-basis: 0.000000001px; }
