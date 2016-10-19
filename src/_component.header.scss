@@ -1,92 +1,106 @@
 .smd-header {
-  //background: unquote("rgb(#{$color-primary;})");
-  background: blue;
-  color: white;
-  padding: 0 0 1.75rem;
-  position: relative;
+  background: unquote("rgb(#{$color-primary;})");
+  color     : white;
+  padding   : 0 0 1.75rem;
+  position  : relative;
+
   &__cover-image {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-repeat: no-repeat;
-    background-size: cover;
+    position           : absolute;
+    top                : 0;
+    left               : 0;
+    width              : 100%;
+    height             : 100%;
+    background-repeat  : no-repeat;
+    background-size    : cover;
     background-position: center center;
-    opacity: .8;
+    opacity            : 0.8;
   }
 
   &__title {
     @include typo-display-2;
-    font-size: 40px;
+    font-size  : 40px;
     font-weight: 400;
     line-height: 1;
-    margin: 0 0 0 3.75rem;
+    margin     : 0 0 0 3.75rem;
     //text-transform: uppercase;
   }
-  &__toolbar {
-    position: relative;
-    height: 4rem;
-    padding: 0 1rem;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    &--top {
 
-    }
+  &__toolbar {
+    position      : relative;
+    height        : 4rem;
+    padding       : 0 1rem;
+    display       : flex;
+    flex-direction: row;
+    align-items   : center;
+
+    &--top {
+      }
+
     &--middle {
       pointer-events: none;
     }
+
     &--bottom {
       pointer-events: none;
     }
   }
+
   &__action {
     height: 2.5rem;
-    width: 2.5rem;
+    width : 2.5rem;
   }
+
   &__fab {
-    bottom: -1.75rem;
-    left: .5rem;
+    bottom  : -1.75rem;
+    left    : 0.5rem;
     position: absolute;
+
     &--right {
-      left: auto;
-      right: .5rem;
+      left : auto;
+      right: 0.5rem;
     }
   }
+
   &__mini-fab {
     position: absolute;
-    bottom: -1.25rem;
-    left: 1rem;
+    bottom  : -1.25rem;
+    left    : 1rem;
+
     &--right {
-      left: auto;
+      left : auto;
       right: 1rem;
     }
   }
 
   &--minimized {
     padding: 0;
+
     .smd-header__toolbar {
-      &--middle,
-      &--bottom {
-        left: 0;
+      &--bottom,
+      &--middle {
+        left    : 0;
         position: absolute;
-        right: 0;
+        right   : 0;
       }
+
       &--middle {
         top: 0;
       }
+
       &--bottom {
         bottom: 0;
       }
     }
+
     .smd-header__title {
       font-size: 30px;
     }
   }
+
   &--with-fab {
     margin-bottom: 1.75rem;
   }
+
   &--with-mini-fab {
     margin-bottom: 1.25rem;
   }
