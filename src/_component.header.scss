@@ -1,8 +1,9 @@
 .smd-header {
   background: unquote("rgb(#{$color-primary;})");
   color     : white;
-  padding   : 0 0 1.75rem;
+  padding   : 0;
   position  : relative;
+  //min-height: 4rem;
 
   &__cover-image {
     position           : absolute;
@@ -18,11 +19,12 @@
 
   &__title {
     @include typo-display-2;
-    font-size  : 40px;
-    font-weight: 400;
-    line-height: 1;
-    margin     : 0 0 0 3.75rem;
-    //text-transform: uppercase;
+    @include truncate;
+    font-size       : 40px;
+    font-weight     : 400;
+    //line-height     : 1;
+    margin          : 0 0 0 3.75rem;
+    transform-origin: left center;
   }
 
   &__toolbar {
@@ -33,8 +35,7 @@
     flex-direction: row;
     align-items   : center;
 
-    &--top {
-      }
+    &--top {}
 
     &--middle {
       pointer-events: none;
@@ -54,6 +55,7 @@
     bottom  : -1.75rem;
     left    : 0.5rem;
     position: absolute;
+    z-index : 2;
 
     &--right {
       left : auto;
@@ -93,15 +95,77 @@
     }
 
     .smd-header__title {
-      font-size: 30px;
+      font-size   : 30px;
+      margin-right: 6.5rem;
     }
   }
 
   &--with-fab {
-    margin-bottom: 1.75rem;
+    padding-bottom: 1.75rem;
+    //margin-bottom : 1.75rem;
   }
 
   &--with-mini-fab {
-    margin-bottom: 1.25rem;
+    padding-bottom: 1.25rem;
+    //margin-bottom : 1.25rem;
+  }
+
+  // -------------------------
+  // --- Transition Header ---
+  // -------------------------
+  &--transition {
+    position  : fixed;
+    top       : 0;
+    left      : 0;
+    min-height: 4rem;
+    right     : 0;
+    z-index   : 10;
+  }
+
+  &--transition &__toolbar {
+    position: absolute;
+    width   : 100%;
+
+  }
+
+  &--transition &__toolbar--top {
+    position: relative;
+  }
+
+  &--transition &__toolbar--middle {
+    top: 0;
+  }
+
+  &--transition &__toolbar--bottom {
+    bottom: 0;
+  }
+
+  &--with-fab.smd-header--transition {
+    min-height: 5.75rem;
+  }
+
+  &--with-fab.smd-header--transition &__toolbar--bottom {
+    bottom: 1.75rem;
+  }
+
+  // --------------------
+  // --- Fixed Header ---
+  // --------------------
+  &--fixed {
+    position: fixed;
+    top     : 0;
+    left    : 0;
+    right   : 0;
+    z-index : 10;
+  }
+
+  &--fixed &__toolbar--bottom {
+    //bottom: 1.75rem;
+    top: 0;
+  }
+
+  &--fixed &__toolbar--bottom {
+    //bottom: 1.75rem;
+    top: 0;
   }
 }
