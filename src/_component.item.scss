@@ -74,6 +74,14 @@ $list-meta-color: unquote("rgba(#{$color-black}, 0.54)");
     &--round {
       border-radius: 100%;
     }
+
+    &--primary {
+      background-color: $c-primary;
+    }
+
+    &--accent {
+      background-color: $c-accent;
+    }
   }
 
   &__avatar-text {
@@ -127,6 +135,14 @@ $list-meta-color: unquote("rgba(#{$color-black}, 0.54)");
       line-height     : $size!important;
       text-align      : center;
       width           : $size;
+    }
+
+    &--primary {
+      background-color: $c-primary;
+    }
+
+    &--accent {
+      background-color: $c-accent;
     }
   }
 
