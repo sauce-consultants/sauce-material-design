@@ -1,0 +1,18 @@
+.smd-empty {
+  text-align: center;
+  padding   : 4rem 0;
+
+  &__icon {
+    color    : $c-border;
+    display  : block;
+    font-size: 12rem!important;
+    margin   : 0;
+  }
+
+  &__text {
+    color        : $c-text-light;
+    font-size    : 1.2rem;
+    display      : block;
+    margin-bottom: 0.5rem;
+  }
+}

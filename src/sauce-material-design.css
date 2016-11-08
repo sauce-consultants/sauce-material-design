@@ -11346,6 +11346,20 @@ html, body {
     float: right;
     width: 2.5rem; }
 
+.smd-empty {
+  text-align: center;
+  padding: 4rem 0; }
+  .smd-empty__icon {
+    color: rgb(224,224,224);
+    display: block;
+    font-size: 12rem !important;
+    margin: 0; }
+  .smd-empty__text {
+    color: rgba(0,0,0, 0.26);
+    font-size: 1.2rem;
+    display: block;
+    margin-bottom: 0.5rem; }
+
 .spacer {
   flex: 1;
   flex-basis: 0.000000001px; }
