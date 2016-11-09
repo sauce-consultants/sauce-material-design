@@ -1,0 +1,19 @@
+.smd-subheader {
+  background-color: $c-list-subheader;
+  margin          : 0;
+  font-size       : 0.875rem;
+  line-height     : 1rem;
+  padding         : 1rem;
+
+  &--bordered {
+    border-bottom: solid 1px $c-list-border;
+  }
+
+  &--sticky {
+    position: absolute;
+    z-index : 2;
+    top     : 0;
+    left    : 0;
+    right   : 0;
+  }
+}

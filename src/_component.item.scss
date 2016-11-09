@@ -1,19 +1,6 @@
-$list-action-color: unquote("rgb(#{$palette-grey-500})");
-$list-border-color: unquote("rgb(#{$palette-grey-300})");
-$list-item-hover: unquote("rgb(#{$palette-grey-100})");
-$list-meta-color: unquote("rgba(#{$color-black}, 0.54)");
-
-.smd-list {
-  margin : 0 0 2rem;
-  padding: 0;
-
-  &--border {
-    border-top: 1px solid $list-border-color;
-  }
-}
-
 .smd-item {
   @include trans;
+  background: $c-list-item;
   list-style: none;
   margin    : 0;
   overflow  : auto;
@@ -23,11 +10,11 @@ $list-meta-color: unquote("rgba(#{$color-black}, 0.54)");
 
   &:focus,
   &:hover {
-    background-color: $list-item-hover;
+    background-color: $c-list-hover;
   }
 
   &--border {
-    border-bottom: 1px solid $list-border-color;
+    border-bottom: 1px solid $c-list-border;
   }
 
   &--no-left {
@@ -85,7 +72,7 @@ $list-meta-color: unquote("rgba(#{$color-black}, 0.54)");
   }
 
   &__avatar-text {
-    background-color: $list-action-color;
+    background-color: $c-list-action;
     color           : white;
     display         : block;
     line-height     : 2.5rem;
@@ -122,14 +109,14 @@ $list-meta-color: unquote("rgba(#{$color-black}, 0.54)");
   }
 
   &__icon {
-    color : $list-action-color;
+    color : $c-list-action;
     margin: 0.5rem;
 
     &--round {
       $size           : 2.5rem;
       color           : white;
       border-radius   : 100%;
-      background-color: $list-action-color;
+      background-color: $c-list-action;
       height          : $size;
       margin          : 0;
       line-height     : $size!important;
@@ -172,7 +159,7 @@ $list-meta-color: unquote("rgba(#{$color-black}, 0.54)");
 
   &__meta {
     @include truncate;
-    color      : $list-meta-color;
+    color      : $c-list-meta;
     margin     : 0;
     line-height: 1rem;
     font-size  : 0.875rem;
@@ -194,7 +181,7 @@ $list-meta-color: unquote("rgba(#{$color-black}, 0.54)");
   }
 
   &__action {
-    color : $list-action-color;
+    color : $c-list-action;
     margin: 0.75rem;
 
     &--labeled {
@@ -205,7 +192,7 @@ $list-meta-color: unquote("rgba(#{$color-black}, 0.54)");
   &__label {
     @include truncate;
     font-size  : $input-text-floating-label-fontsize;
-    color      : $list-action-color;
+    color      : $c-list-action;
     display    : block;
     line-height: 1.5rem;
     text-align : center;

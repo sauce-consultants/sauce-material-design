@@ -1,0 +1,16 @@
+.smd-list {
+  height  : calc(100%);
+  margin  : 0;
+  overflow: hidden;
+  padding : 0;
+  position: relative;
+
+  &--border {
+    border-top: 1px solid $c-list-border;
+  }
+
+  &__scroll {
+    overflow: auto;
+    height  : 100%;
+  }
+}
