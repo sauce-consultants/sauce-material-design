@@ -98,6 +98,10 @@
     position  : absolute;
     font-size : 12px;
     margin-top: 3px;
+
+    &--radio {
+      position: relative;
+    }
   }
 
   .is-focused &__tip {
