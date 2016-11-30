@@ -33,6 +33,19 @@
         z-index    : 1;
       }
     }
+
+    &--radio {
+      .mdl-radio {
+        display   : block;
+        margin-top: 0.25rem;
+      }
+    }
+
+    &--inline-radio {
+      .mdl-radio {
+        display: inline-block;
+      }
+    }
   }
 
   &__input {
@@ -98,10 +111,6 @@
     position  : absolute;
     font-size : 12px;
     margin-top: 3px;
-
-    &--radio {
-      position: relative;
-    }
   }
 
   .is-focused &__tip {
@@ -115,9 +124,4 @@
   &__warning {
     color: $c-warning;
   }
-
-}
-
-.mdl-radio {
-  display: block;
 }
