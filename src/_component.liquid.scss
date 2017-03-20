@@ -1,9 +1,16 @@
-.smd-liquid--flex {
-    display       : flex;
-    flex-direction: column;
-    min-height    : 100%;
+.smd-liquid {
+    &--flex {
+        display       : flex;
+        flex-direction: column;
+        min-height    : 100%;
 
-    > .liquid-child {
-        flex: 1;
+        > .liquid-child {
+            flex: 1;
+        }
+    }
+
+    &--scroll {
+        flex    : 1;
+        overflow: auto;
     }
 }
