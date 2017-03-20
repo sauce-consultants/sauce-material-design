@@ -1,0 +1,32 @@
+.mdl-layout {
+    &__header {
+        background: unquote("rgb(#{$color-primary-dark})");
+    }
+
+    &__content {
+        display       : flex;
+        flex-direction: column;
+    }
+
+    &__liquid {
+        height  : 100%;
+        position: absolute;
+        width   : 100%;
+
+        > .liquid-child {
+            display       : flex;
+            flex-direction: column;
+            height        : 100%;
+            overflow      : auto;
+        }
+    }
+    @media screen and (max-width: 1024px) {
+        &__header {
+            display: flex;
+        }
+
+        &__drawer-button {
+            color: white;
+        }
+    }
+}
