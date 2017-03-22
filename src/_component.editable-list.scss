@@ -1,0 +1,23 @@
+.smd-editable-list__item {
+  width: 100%;
+}
+
+.smd-editable-list__item-inputs {
+  width: 80%;
+  float: left;
+
+  .smd-form__control {
+    width: 100% !important;
+  }
+}
+
+.smd-editable-list__item-actions {
+  width: 20%;
+  float: right;
+  padding:10px;
+}
+
+.smd-editable-list__action {
+  margin-right: .5rem;
+  display: inline;
+}
