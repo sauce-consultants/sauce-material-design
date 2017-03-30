@@ -3,8 +3,16 @@
 @import "settings.color";
 @import "settings.type";
 @import "generic.base";
+@import "tools.media";
 @import "tools.animation";
 @import "tools.type";
+@import "tools.flex";
+@import "component.layout";
+@import "component.liquid";
+@import "component.navbar";
+@import "component.navigation";
+@import "component.page";
+@import "component.tabs";
 @import "component.form";
 @import "component.header";
 @import "component.list";
@@ -14,4 +22,5 @@
 @import "component.dropdown";
 @import "component.data-list";
 @import "component.empty";
+@import "component.modal";
 @import "shame";
