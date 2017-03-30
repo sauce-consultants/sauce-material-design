@@ -43,14 +43,17 @@
   {
     @for $i from 1 through 12
     {
-      &--grow-#{$i}
+      &--flex-#{$i}
+      {
+        flex: $i;
+      }
 
-      &--#{$i}
+      &--grow-#{$i}
       {
         flex-grow: $i;
       }
     }
-
+    
     &--align
     {
       &-start
