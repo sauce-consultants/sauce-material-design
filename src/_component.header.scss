@@ -16,6 +16,8 @@ $smd-header-title-font-size: 2.5rem;
 $smd-header-title-font-size--minimized: 1.875rem;
 $smd-header-title-font-size--mobile: 1.5rem;
 $smd-header-title-font-size--mobile-minimized: 1.25rem;
+$smd-header-crumb-font-size: 0.875rem;
+$smd-header-crumb-font-size--mobile: 0.75rem;
 
 .smd-header {
     background: unquote("rgb(#{$color-primary;})");
@@ -80,6 +82,14 @@ $smd-header-title-font-size--mobile-minimized: 1.25rem;
         &--back-min {
             opacity   : 0;
             visibility: hidden;
+        }
+    }
+
+    &__crumb {
+        font-size: $smd-header-crumb-font-size--mobile;
+        @include truncate;
+        @include mq(tablet) {
+            font-size: $smd-header-crumb-font-size;
         }
     }
 
