@@ -8,6 +8,8 @@
     }
 
     &__tab-bar {
+        overflow: auto;
+
         &--left {
             justify-content: flex-start;
         }
@@ -17,7 +19,14 @@
         }
     }
 
+    &--accent &__tab-bar,
+    &--primary &__tab-bar {
+        border-bottom: none;
+    }
+
     &__tab {
+        overflow: initial;
+
         &--primary {
             color: unquote("rgb(#{$color-primary-contrast})");
         }
