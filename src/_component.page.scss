@@ -37,6 +37,16 @@
         }
     }
 
+    &__footer {
+        &--form {
+            text-align   : right;
+            margin       : 0 auto;
+            max-width    : $smd-content-max-width;
+            padding-right: 0;
+            padding-left : 0;
+        }
+    }
+
     &__column {
         margin: 0 0.5rem 1rem;
 
