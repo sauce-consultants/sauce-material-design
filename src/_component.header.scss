@@ -1,3 +1,22 @@
+/*
+.smd-header {
+  transform: translate3d(0,0,0); // smooth transitions on safari
+  @include mq ("tablet", "max") {
+    &__title {
+      font-size: 1.875rem;
+    }
+
+    &--minimized &__title {
+      font-size: 1.25rem;
+    }
+  }
+}
+*/
+$smd-header-title-font-size: 2.5rem;
+$smd-header-title-font-size--minimized: 1.875rem;
+$smd-header-title-font-size--mobile: 1.5rem;
+$smd-header-title-font-size--mobile-minimized: 1.25rem;
+
 .smd-header {
     background: unquote("rgb(#{$color-primary;})");
     color     : white;
@@ -18,13 +37,14 @@
 
     &__title {
         @include trans;
-        @include typo-display-2;
         @include truncate;
-        font-size       : 40px;
+        font-size       : $smd-header-title-font-size--mobile;
         font-weight     : 400;
-        //line-height     : 1;
         margin          : 0 0 0 3.75rem;
         transform-origin: left center;
+        @include mq(tablet) {
+            font-size: $smd-header-title-font-size;
+        }
     }
 
     &__toolbar {
@@ -95,8 +115,11 @@
         }
 
         .smd-header__title {
-            font-size   : 30px;
+            font-size   : $smd-header-title-font-size--mobile-minimized;
             margin-right: 6.5rem;
+            @include mq(tablet) {
+                font-size: $smd-header-title-font-size--minimized;
+            }
         }
     }
 
