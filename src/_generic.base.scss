@@ -10,6 +10,14 @@ html {
     box-sizing: border-box;
 }
 
-body > .ember-view {
-    height: 100%;
+body > {
+    min-width: 20rem;
+
+    .ember-view {
+        height: 100%;
+    }
+}
+
+[data-ember-action]:not(:disabled) {
+    cursor: pointer;
 }
