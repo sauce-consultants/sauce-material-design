@@ -1,53 +1,53 @@
 .smd-data-list {
-  margin: 0 0 2rem;
+    margin   : 0 0 2rem;
+    max-width: 30rem;
 
-  &--no-margin {
-    margin: 0;
-  }
-
-  &__label {
-    color         : $c-text;
-    font-size     : $input-text-floating-label-fontsize;
-    line-height   : 1;
-    margin        : 0;
-    font-weight   : normal;
-    text-transform: uppercase;
-
-    &--small {
-      font-size: 0.625rem;
-    }
-  }
-
-  &__value {
-    @include truncate;
-    font-size  : 20px;
-    font-weight: normal;
-    line-height: 1.5rem;
-    padding    : 0.5rem 0;
-    margin     : 0 0 0.5rem;
-
-    &--multi-line {
-      white-space: normal;
+    &--no-margin {
+        margin: 0;
     }
 
-    &--small {
-      font-size  : 1rem;
-      line-height: 1.25rem;
+    &__label {
+        color         : $c-text;
+        font-size     : $input-text-floating-label-fontsize;
+        line-height   : 1;
+        margin        : 0;
+        font-weight   : normal;
+        text-transform: uppercase;
+
+        &--small {
+            font-size: 0.625rem;
+        }
     }
-  }
 
-  &__link {
-    display        : block;
-    text-decoration: none;
+    &__value {
+        @include truncate;
+        font-size  : 20px;
+        font-weight: normal;
+        line-height: 1.5rem;
+        padding    : 0.5rem 0;
+        margin     : 0 0 0.5rem;
 
-    &:hover {
-      background: $c-hover;
+        &--multi-line {
+            white-space: normal;
+        }
+
+        &--small {
+            font-size  : 1rem;
+            line-height: 1.25rem;
+        }
     }
-  }
 
-  &__icon {
-    //border: 1px solid $c-border;
-    float: right;
-    width: 2.5rem;
-  }
+    &__link {
+        display        : block;
+        text-decoration: none;
+
+        &:hover {
+            background: $c-hover;
+        }
+    }
+
+    &__icon {
+        float: right;
+        width: 2.5rem;
+    }
 }
