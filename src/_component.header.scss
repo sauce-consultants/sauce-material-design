@@ -1,17 +1,3 @@
-/*
-.smd-header {
-  transform: translate3d(0,0,0); // smooth transitions on safari
-  @include mq ("tablet", "max") {
-    &__title {
-      font-size: 1.875rem;
-    }
-
-    &--minimized &__title {
-      font-size: 1.25rem;
-    }
-  }
-}
-*/
 $smd-header-title-font-size: 2.5rem;
 $smd-header-title-font-size--minimized: 1.875rem;
 $smd-header-title-font-size--mobile: 1.5rem;
@@ -169,18 +155,59 @@ $smd-header-crumb-font-size--mobile: 0.75rem;
     &--minimized.smd-header--with-mini-fab &__toolbar--bottom {
         bottom: 1.25;
     }
-    /*
-     * Rules for a header with active search
-     */
-    /*&--searching.smd-header--minimized {
-        //
-        .smd-header__title {
-            width: 0;
-            @include mq(desktop) {
-                width: 100%;
+    @include mq(desktop, max) {
+        &--minimized-mobile {
+            display        : flex;
+            flex-direction : row;
+            justify-content: space-between;
+            padding        : 0 1rem;
+            flex-wrap      : nowrap;
+
+            .smd-header__toolbar {
+                padding: 0;
+
+                &--top {
+                    order: 3;
+                    flex : 1;
+                }
+
+                &--middle {
+                    order: 2;
+                }
+
+                &--bottom {
+                    min-width: 2rem;
+                    order    : 1;
+                }
+            }
+
+            .smd-header__action--back-max {
+                opacity   : 0;
+                visibility: hidden;
+                display   : none;
+            }
+
+            .smd-header__action--back-min {
+                opacity   : 1;
+                visibility: visible;
+            }
+
+            .smd-header__title {
+                font-size: $smd-header-title-font-size--mobile-minimized;
+                @include mq(tablet) {
+                    font-size: $smd-header-title-font-size--minimized;
+                }
             }
         }
-    }*/
+
+        &--minimized-mobile.smd-header--with-fab &__toolbar--bottom {
+            bottom: 1.75rem;
+        }
+
+        &--minimized-mobile.smd-header--with-mini-fab &__toolbar--bottom {
+            bottom: 1.25;
+        }
+    }
     /*
      * Rules for header with fab
      */

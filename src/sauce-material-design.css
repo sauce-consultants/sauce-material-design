@@ -11203,20 +11203,6 @@ body > {
 .smd-form .mdl-textfield {
   width: auto; }
 
-/*
-.smd-header {
-  transform: translate3d(0,0,0); // smooth transitions on safari
-  @include mq ("tablet", "max") {
-    &__title {
-      font-size: 1.875rem;
-    }
-
-    &--minimized &__title {
-      font-size: 1.25rem;
-    }
-  }
-}
-*/
 .smd-header {
   background: rgb(63,81,181);
   color: white;
@@ -11225,18 +11211,6 @@ body > {
   /*
      * Rules for a minimized header
      */
-  /*
-     * Rules for a header with active search
-     */
-  /*&--searching.smd-header--minimized {
-        //
-        .smd-header__title {
-            width: 0;
-            @include mq(desktop) {
-                width: 100%;
-            }
-        }
-    }*/
   /*
      * Rules for header with fab
      */ }
@@ -11343,6 +11317,40 @@ body > {
     bottom: 1.75rem; }
   .smd-header--minimized.smd-header--with-mini-fab .smd-header__toolbar--bottom {
     bottom: 1.25; }
+  @media only screen and (max-width: 1024px) {
+    .smd-header--minimized-mobile {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 0 1rem;
+      flex-wrap: nowrap; }
+      .smd-header--minimized-mobile .smd-header__toolbar {
+        padding: 0; }
+        .smd-header--minimized-mobile .smd-header__toolbar--top {
+          order: 3;
+          flex: 1; }
+        .smd-header--minimized-mobile .smd-header__toolbar--middle {
+          order: 2; }
+        .smd-header--minimized-mobile .smd-header__toolbar--bottom {
+          min-width: 2rem;
+          order: 1; }
+      .smd-header--minimized-mobile .smd-header__action--back-max {
+        opacity: 0;
+        visibility: hidden;
+        display: none; }
+      .smd-header--minimized-mobile .smd-header__action--back-min {
+        opacity: 1;
+        visibility: visible; }
+      .smd-header--minimized-mobile .smd-header__title {
+        font-size: 1.25rem; } }
+    @media only screen and (max-width: 1024px) and (min-width: 400px) {
+      .smd-header--minimized-mobile .smd-header__title {
+        font-size: 1.875rem; } }
+  @media only screen and (max-width: 1024px) {
+    .smd-header--minimized-mobile.smd-header--with-fab .smd-header__toolbar--bottom {
+      bottom: 1.75rem; }
+    .smd-header--minimized-mobile.smd-header--with-mini-fab .smd-header__toolbar--bottom {
+      bottom: 1.25; } }
   .smd-header--with-fab {
     padding-bottom: 1.75rem; }
   .smd-header--with-mini-fab {
