@@ -12,3 +12,18 @@ $breakpoints: ( "tablet": 400px, "desktop": 1025px, "desktop-wide": 1440px );
         }
     }
 }
+@mixin mq-portrait() {
+     @media all and (orientation:portrait){
+        @content;
+    }
+}
+@mixin mq-landscape() {
+     @media all and (orientation:landscape){
+        @content;
+    }
+}
+@mixin mq-retina() {
+     @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and ( min--moz-device-pixel-ratio: 2), only screen and ( -o-min-device-pixel-ratio: 2/1), only screen and ( min-device-pixel-ratio: 2), only screen and ( min-resolution: 192dpi), only screen and ( min-resolution: 2dppx){
+        @content;
+    }
+}
