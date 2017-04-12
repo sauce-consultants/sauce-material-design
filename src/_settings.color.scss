@@ -1,23 +1,18 @@
 $c-primary       : unquote("rgb(#{$color-primary})")!default;
+$c-primary-dark  : unquote("rgb(#{$color-primary-dark})")!default;
 $c-accent        : unquote("rgb(#{$color-accent})")!default;
 $c-border        : unquote("rgb(#{$palette-grey-300})")!default;
-
 $c-grey          : unquote("rgb(#{$palette-grey-500})")!default;
-
 $c-text          : unquote("rgba(#{$color-black}, 0.54)")!default;
 $c-text-light    : unquote("rgba(#{$color-black}, 0.26)")!default;
 $c-hover         : unquote("rgb(#{$palette-grey-100})")!default;
-
 $c-label         : $input-text-label-color!default;
-
 $c-create        : unquote("rgb(#{$palette-green-300;})")!default;
 $c-update        : unquote("rgb(#{$palette-light-blue-300;})")!default;
 $c-delete        : unquote("rgb(#{$palette-orange-300;})")!default;
-
 $c-success       : unquote("rgb(#{$palette-green-A700;})")!default;
 $c-error         : unquote("rgb(#{$palette-red-A700;})")!default;
 $c-warning       : unquote("rgb(#{$palette-orange-A700;})")!default;
-
 $c-list-action   : unquote("rgb(#{$palette-grey-500})")!default;
 $c-list-border   : $c-border!default;
 $c-list-hover    : $c-hover!default;
