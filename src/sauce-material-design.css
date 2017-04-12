@@ -11004,6 +11004,24 @@ body > .ember-view {
     padding: 1rem; }
     .smd-page__body > p {
       margin: 0 0 1rem; }
+    .smd-page__body--row {
+      display: flex;
+      flex-direction: column-reverse;
+      padding: 1rem 0.5rem; }
+      @media only screen and (min-width: 1025px) {
+        .smd-page__body--row {
+          flex-direction: row; } }
+    .smd-page__body--no-padding {
+      padding: 0; }
+  .smd-page__column {
+    margin: 0 0.5rem 1rem; }
+    .smd-page__column:first-child {
+      margin-bottom: 0; }
+    @media only screen and (min-width: 1025px) {
+      .smd-page__column--aside {
+        flex: 1; }
+      .smd-page__column--main {
+        flex: 3; } }
   .smd-page__list {
     flex: 1; }
   .smd-page__footer {
@@ -11031,17 +11049,23 @@ body > .ember-view {
 .mdl-tabs--accent {
   background: rgb(255,64,129); }
 
-.mdl-tabs__tab-bar--left {
-  justify-content: flex-start; }
+.mdl-tabs__tab-bar {
+  overflow: auto; }
+  .mdl-tabs__tab-bar--left {
+    justify-content: flex-start; }
+  .mdl-tabs__tab-bar--right {
+    justify-content: flex-end; }
 
-.mdl-tabs__tab-bar--right {
-  justify-content: flex-end; }
+.mdl-tabs--accent .mdl-tabs__tab-bar,
+.mdl-tabs--primary .mdl-tabs__tab-bar {
+  border-bottom: none; }
 
-.mdl-tabs__tab--primary {
-  color: rgb(255,255,255); }
-
-.mdl-tabs__tab--accent {
-  color: rgb(255,255,255); }
+.mdl-tabs__tab {
+  overflow: initial; }
+  .mdl-tabs__tab--primary {
+    color: rgb(255,255,255); }
+  .mdl-tabs__tab--accent {
+    color: rgb(255,255,255); }
 
 .mdl-tabs.is-upgraded .mdl-tabs__tab--primary.is-active {
   color: rgb(255,255,255); }
@@ -11313,12 +11337,15 @@ body > .ember-view {
 .smd-list {
   height: auto;
   overflow: auto;
-  margin: 0;
   padding: 0;
-  position: relative; }
+  position: relative;
+  max-width: 40rem;
+  margin: 0 auto;
+  width: 100%; }
   .smd-list--scrollable {
     overflow: hidden;
-    height: 100%; }
+    height: 100%;
+    flex: 1; }
   .smd-list--border {
     border-top: 1px solid rgb(224,224,224); }
   .smd-list__scroll {
@@ -11529,8 +11556,8 @@ body > .ember-view {
       color: rgba(0,0,0, 0.54); }
 
 .smd-data-list {
-  margin: 0 0 2rem;
-  max-width: 30rem; }
+  margin: 0 auto 2rem;
+  max-width: 40rem; }
   .smd-data-list--no-margin {
     margin: 0; }
   .smd-data-list__label {

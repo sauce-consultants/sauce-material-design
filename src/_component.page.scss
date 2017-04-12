@@ -21,6 +21,38 @@
         > p {
             margin: 0 0 1rem;
         }
+
+        &--row {
+            display       : flex;
+            flex-direction: column-reverse;
+            padding       : 1rem 0.5rem;
+
+            @include mq ('desktop') {
+                flex-direction: row;
+            }
+        }
+
+        &--no-padding {
+            padding: 0;
+        }
+    }
+
+    &__column {
+        margin: 0 0.5rem 1rem;
+
+        &:first-child {
+            margin-bottom: 0;
+        }
+
+        @include mq ('desktop') {
+            &--aside {
+                flex: 1;
+            }
+
+            &--main {
+                flex: 3;
+            }
+        }
     }
 
     &__list {
