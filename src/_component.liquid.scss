@@ -9,8 +9,24 @@
         }
     }
 
+    &--grow {
+        min-height    : 100%;
+        display       : flex;
+        flex-direction: column;
+        flex          : 1;
+
+        > .liquid-child {
+            display       : flex;
+            flex-direction: column;
+            flex          : 1;
+        }
+    }
+
     &--scroll {
-        flex    : 1;
-        overflow: auto;
+        flex          : 1;
+        overflow      : auto;
+        min-height    : 100%;
+        display       : flex;
+        flex-direction: column;
     }
 }
