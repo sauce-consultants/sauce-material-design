@@ -1,6 +1,6 @@
 .smd-data-list {
-    margin   : 0 0 2rem;
-    max-width: 30rem;
+    margin   : 0 auto 2rem;
+    max-width: $smd-content-max-width;
 
     &--no-margin {
         margin: 0;
