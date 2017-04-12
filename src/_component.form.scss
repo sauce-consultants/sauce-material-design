@@ -1,4 +1,17 @@
 .smd-form {
+    &--flex {
+        display       : flex;
+        flex-direction: column;
+        flex          : 1;
+    }
+
+    &__control,
+    &__fieldset {
+        max-width   : $smd-content-max-width;
+        margin-left : auto;
+        margin-right: auto;
+    }
+
     &__control {
         display      : block;
         margin-bottom: 1rem;
