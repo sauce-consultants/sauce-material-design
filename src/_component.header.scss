@@ -40,7 +40,8 @@ $smd-header-title-font-size--mobile-minimized: 1.25rem;
         @include truncate;
         font-size       : $smd-header-title-font-size--mobile;
         font-weight     : 400;
-        margin          : 0 0 0 3.75rem;
+        margin          : 0;
+        min-width       : 0;
         transform-origin: left center;
         @include mq(tablet) {
             font-size: $smd-header-title-font-size;
@@ -55,20 +56,31 @@ $smd-header-title-font-size--mobile-minimized: 1.25rem;
         flex-direction: row;
         align-items   : center;
 
-        &--top {}
-
-        &--middle {
-            pointer-events: none;
+        &--top {
+            flex: 1;
         }
 
+        &--middle {}
+
         &--bottom {
-            pointer-events: none;
+            @include truncate;
         }
     }
 
     &__action {
+        @include trans;
         height: 2.5rem;
         width : 2.5rem;
+
+        &--back-max {
+            opacity   : 1;
+            visibility: visible;
+        }
+
+        &--back-min {
+            opacity   : 0;
+            visibility: hidden;
+        }
     }
 
     &__fab {
@@ -93,30 +105,47 @@ $smd-header-title-font-size--mobile-minimized: 1.25rem;
             right: 1rem;
         }
     }
-
+    /*
+     * Rules for a minimized header
+     */
     &--minimized {
-        padding: 0;
+        display        : flex;
+        flex-direction : row;
+        justify-content: space-between;
+        padding        : 0 1rem;
+        flex-wrap      : nowrap;
 
         .smd-header__toolbar {
-            &--bottom,
-            &--middle {
-                left    : 0;
-                position: absolute;
-                right   : 0;
+            padding: 0;
+
+            &--top {
+                order: 3;
+                flex : 1;
             }
 
             &--middle {
-                top: 0;
+                order: 2;
             }
 
             &--bottom {
-                bottom: 0;
+                min-width: 2rem;
+                order    : 1;
             }
         }
 
+        .smd-header__action--back-max {
+            opacity   : 0;
+            visibility: hidden;
+            display   : none;
+        }
+
+        .smd-header__action--back-min {
+            opacity   : 1;
+            visibility: visible;
+        }
+
         .smd-header__title {
-            font-size   : $smd-header-title-font-size--mobile-minimized;
-            margin-right: 6.5rem;
+            font-size: $smd-header-title-font-size--mobile-minimized;
             @include mq(tablet) {
                 font-size: $smd-header-title-font-size--minimized;
             }
@@ -130,7 +159,21 @@ $smd-header-title-font-size--mobile-minimized: 1.25rem;
     &--minimized.smd-header--with-mini-fab &__toolbar--bottom {
         bottom: 1.25;
     }
-
+    /*
+     * Rules for a header with active search
+     */
+    /*&--searching.smd-header--minimized {
+        //
+        .smd-header__title {
+            width: 0;
+            @include mq(desktop) {
+                width: 100%;
+            }
+        }
+    }*/
+    /*
+     * Rules for header with fab
+     */
     &--with-fab {
         padding-bottom: 1.75rem;
         //margin-bottom : 1.75rem;
