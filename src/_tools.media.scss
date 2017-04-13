@@ -1,9 +1,7 @@
-$grid-desktop-breakpoint: 840px !default;
-$grid-tablet-breakpoint: 480px !default;
-$breakpoints: ( "tablet": 400px, "desktop": 1025px, "desktop-wide": 1440px );
+$smd-breakpoints: ( "tablet": 400px, "desktop": 1025px, "desktop-wide": 1440px )!default;
 @mixin mq($width, $type: min) {
-     @if map_has_key($breakpoints, $width){
-        $width: map_get($breakpoints, $width);
+     @if map_has_key($smd-breakpoints, $width){
+        $width: map_get($smd-breakpoints, $width);
         @if $type == max {
             $width: $width - 1px;
         }
