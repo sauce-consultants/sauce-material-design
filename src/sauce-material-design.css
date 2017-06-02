@@ -11430,6 +11430,19 @@ body > {
   cursor: pointer; }
   .smd-item:focus, .smd-item:hover {
     background-color: rgb(245,245,245); }
+  .smd-item--disabled {
+    background-color: rgb(245,245,245);
+    cursor: default; }
+    .smd-item--disabled .smd-item__meta,
+    .smd-item--disabled .smd-item__sub-title,
+    .smd-item--disabled .smd-item__title {
+      color: rgba(0,0,0, 0.26); }
+      .smd-item--disabled .smd-item__meta strong,
+      .smd-item--disabled .smd-item__sub-title strong,
+      .smd-item--disabled .smd-item__title strong {
+        color: rgba(0,0,0, 0.26); }
+    .smd-item--disabled .smd-item__avatar {
+      opacity: 0.56; }
   .smd-item--border {
     border-bottom: 1px solid rgb(224,224,224); }
   .smd-item--no-left {
