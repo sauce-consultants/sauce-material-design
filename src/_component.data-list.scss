@@ -1,53 +1,57 @@
 .smd-data-list {
-    margin   : 0 auto 2rem;
-    max-width: $smd-content-max-width;
+  margin   : 0 auto 2rem;
+  max-width: $smd-content-max-width;
 
-    &--no-margin {
-        margin: 0;
+  &--no-margin {
+    margin: 0;
+  }
+
+  &__label {
+    color         : $c-text;
+    font-size     : $input-text-floating-label-fontsize;
+    line-height   : 1;
+    margin        : 0;
+    font-weight   : normal;
+    text-transform: uppercase;
+
+    &--small {
+      font-size: 0.625rem;
+    }
+  }
+
+  &__value {
+    @include truncate;
+    font-size  : 20px;
+    font-weight: normal;
+    line-height: 1.5rem;
+    padding    : 0.5rem 0;
+    margin     : 0 0 0.5rem;
+
+    &--multi-line {
+      white-space: normal;
     }
 
-    &__label {
-        color         : $c-text;
-        font-size     : $input-text-floating-label-fontsize;
-        line-height   : 1;
-        margin        : 0;
-        font-weight   : normal;
-        text-transform: uppercase;
-
-        &--small {
-            font-size: 0.625rem;
-        }
+    &--small {
+      font-size  : 1rem;
+      line-height: 1.25rem;
     }
 
-    &__value {
-        @include truncate;
-        font-size  : 20px;
-        font-weight: normal;
-        line-height: 1.5rem;
-        padding    : 0.5rem 0;
-        margin     : 0 0 0.5rem;
-
-        &--multi-line {
-            white-space: normal;
-        }
-
-        &--small {
-            font-size  : 1rem;
-            line-height: 1.25rem;
-        }
+    &--with-action {
+      cursor: pointer;
     }
+  }
 
-    &__link {
-        display        : block;
-        text-decoration: none;
+  &__link {
+    display        : block;
+    text-decoration: none;
 
-        &:hover {
-            background: $c-hover;
-        }
+    &:hover {
+      background: $c-hover;
     }
+  }
 
-    &__icon {
-        float: right;
-        width: 2.5rem;
-    }
+  &__icon {
+    float: right;
+    width: 2.5rem;
+  }
 }

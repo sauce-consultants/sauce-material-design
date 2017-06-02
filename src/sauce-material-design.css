@@ -11673,6 +11673,8 @@ body > {
     .smd-data-list__value--small {
       font-size: 1rem;
       line-height: 1.25rem; }
+    .smd-data-list__value--with-action {
+      cursor: pointer; }
   .smd-data-list__link {
     display: block;
     text-decoration: none; }
